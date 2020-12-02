@@ -1,0 +1,357 @@
+body {
+	font-family: 'Nunito',
+		sans-serif !important;
+}
+
+/* nav css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: 1.2;
+	color: inherit;
+}
+
+.logo {
+	width: 50px;
+	margin-right: 10px;
+}
+
+.judul {
+	margin-top: 15px;
+	font-weight: 600;
+}
+
+.judul:hover {
+	color: rgba(120, 184, 56, 0.596);
+}
+
+.navbar-collapse a {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	color: black !important;
+}
+
+.navbar-collapse a:hover {
+	color: rgba(120, 184, 56, 0.596) !important;
+
+
+}
+
+/* nav */
+/* jumbo tron */
+.jumbotronimg {
+	width: 200px !important;
+}
+
+.jumbotron {
+	background-image: url(../image/bacground.jpg);
+	height: 400px;
+	position: relative;
+}
+
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(34, 102, 138, 1) 0%, rgba(154, 118, 255, 1) 80.6%);
+	position: absolute;
+	bottom: 0;
+	opacity: 0.93;
+}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron h2 {
+	color: ghostwhite;
+	font-weight: 400;
+	font-size: 50px;
+}
+
+.jumbotron p {
+	color: ghostwhite;
+	font-weight: 500;
+}
+
+.typed {
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-animation: type 5s steps(23, end);
+	animation: type 5s steps(23, end);
+}
+
+@keyframes type {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+.jum-btn {
+	font-size: 13px !important;
+	font-weight: 600 !important;
+
+}
+
+/* /jumbo tron */
+
+/* main */
+span .home {
+	font-size: 12px;
+}
+
+main {
+	height: 800px;
+	margin-top: -40px;
+}
+
+.flex-row .card-body {
+	flex-direction: column;
+	display: flex;
+	flex: 1 0 auto;
+	height: auto;
+	position: relative;
+}
+
+.card-post {
+	border: 1px solid #e3e3e399;
+	border-radius: 0;
+
+}
+
+.card-post .bg-white {
+	background-color: rgb(255, 255, 255);
+}
+
+.card-post .card-img-top {
+	min-width: 0;
+	width: 100%;
+	height: auto;
+}
+
+.card-post img {
+	border-radius: 0;
+
+}
+
+.card-post .post-title {
+	font-size: 15px;
+	margin-top: 5px;
+	font-weight: 500;
+}
+
+.card-post .post-category {
+	font-size: 10.5pt;
+	font-weight: 700;
+}
+
+.card-post a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.card-post .post-meta {
+	bottom: 15px;
+	position: absolute;
+}
+
+.card-post .img-post {
+	width: 50px;
+	margin-right: 7px;
+}
+
+.card-post .post-author a {
+	font-size: 10px;
+	color: #333;
+	font-weight: 600;
+}
+
+/* /main */
+
+/* post-promo */
+.post-promo {
+	background-image: url(../image/wave11.png);
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.promo-text p {
+	margin-top: 2px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.promo-text-2 {
+	margin-top: 150px;
+}
+
+.promo-text-2 p {
+	font-size: 30px;
+	margin-top: 20px !important;
+	font-weight: 300;
+}
+
+/* -post-promo */
+/* post-patner */
+.patner-text h5 {
+	font-size: 30px !important;
+	font-weight: 300;
+	color: blanchedalmond;
+}
+
+.patner-text p {
+	font-size: 18px !important;
+	color: darkgray;
+
+}
+
+/* paralax */
+.rubypedia-parallax {
+	background-image: url(../image/paralax1.jpg);
+	height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rubypedia-parallax .container {
+	padding-top: 50px;
+}
+
+
+.rubypedia-parallax img {
+	width: 150px;
+}
+
+/* /post patenr */
+/* post member */
+.post-member {
+	background: #F2F5F7;
+
+}
+
+
+.card-member {
+	border: #F2F5F7;
+	min-height: 300px !important;
+
+}
+
+
+
+/* /posr member */
+
+
+@media only screen and (max-width: 600px) {
+
+	/* nav css */
+
+	.logo {
+		width: 30px;
+		margin-right: 10px;
+	}
+
+	.judul {
+		margin-top: 7px;
+	}
+
+	/* nav */
+	/* post-promo */
+	.post-promo {
+		height: 450px;
+	}
+
+	.col-slide {
+		height: 200px !important;
+	}
+
+	.promo-text p {
+		margin-top: 2px;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.promo-text h1 {
+		margin-top: 2px;
+		font-size: 24px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.promo-text-2 {
+		display: none;
+	}
+
+
+	/* -post-promo */
+	/* post-patner */
+	.patner-text h5 {
+		font-size: 30px !important;
+		font-weight: 300;
+		color: blanchedalmond;
+	}
+
+	.patner-text p {
+		font-size: 18px !important;
+		color: darkgray;
+
+	}
+
+	/* /post-promo */
+	/* post-patner */
+	.rubypedia-parallax .container {
+		padding-top: 10px;
+	}
+
+	.patner-text h5 {
+		font-size: 30px !important;
+		font-weight: 300;
+		color: blanchedalmond;
+	}
+
+	.patner-text p {
+		font-size: 18px !important;
+		color: darkgray;
+
+	}
+
+	/* paralax */
+	.rubypedia-parallax {
+		height: auto;
+		text-align: center;
+
+	}
+
+	.rubypedia-parallax img {
+		width: 80% !important;
+	}
+
+	/* /post patenr */
+}
